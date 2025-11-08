@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* 🧩 TypeORM uchun zarur */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Qo'shimcha foydali opsiyalar */
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./src/types", "./node_modules/@types"] 
+  },
+  "include": ["src", "src/types"],
+  "exclude": ["node_modules", "dist"]
+}
